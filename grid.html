@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <title>Bootstrap - Sistema de Grids</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- ************************************************************************************************* -->
+
+        <style type="text/css">
+            
+            .marcador{
+                background: #fe9d9d;
+                border: 1px solid #f94646;
+            }
+
+            .marcador-container{
+                background: #5bf946;
+                border: 1px solid #36ae26;
+            }
+
+        </style> 
+    </head>
+
+    <body style="padding-bottom: 200px; width: 90%; margin: 0 auto;">
+
+        <!-- Documentação: https://getbootstrap.com.br/docs/4.1/layout/grid/ -->
+
+        <div class="container marcador-container">
+            
+            <div class="row">
+
+                <div class="marcador"> <!-- caso a div não tenha nenhuma classe especificada ela
+                                            ocupará o espaço de 12 grids em todos os tamanhos de tela (default) -->
+                    <h2>Cabeçalho</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <button class="btn btn-outline-dark btn-sm">Leia mais</button>
+                </div>
+
+                <div class="marcador col-md-6 "> <!-- a partir do tamanho 'md' (medium) essa div vai
+                                                      ocupar um total de 6 grids. Quando o tamnho
+                                                      for menor que 'md' ela ocupará 12 grids (default) -->
+                    <h2>Teste de grid layout - conteúdo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <button class="btn btn-outline-dark btn-sm">Leia mais</button>
+                </div>
+
+                <div class="marcador col-md-6">  <!-- a partir do tamanho 'md' (medium) essa div vai
+                                                      ocupar um total de 6 grids. Quando o tamnho
+                                                      for menor que 'md' ela ocupará 12 grids (default) -->
+                    <h2>Teste de grid layout - conteúdo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <button class="btn btn-outline-dark btn-sm">Leia mais</button>
+                </div>
+
+                <div class="marcador col-sm-8 col-md-6">  <!-- a partir do tamanho 'sm' (small) essa div vai
+                                                               ocupar um total de 8 grids, até atingir o 
+                                                               tamanho 'md', que passará a ter 6 grids  -->
+                    <h2>Teste de grid layout - conteúdo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <button class="btn btn-outline-dark btn-sm">Leia mais</button>
+                </div>
+
+                <div class="marcador col-sm-4 col-md-6">     <!-- a partir do tamanho 'sm' (small) essa div vai
+                                                         ocupar um total de 4 grids, até atingir o 
+                                                         tamanho 'md', que passará a ter 6 grids  -->
+                    <h2>Teste de grid layout - conteúdo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <button class="btn btn-outline-dark btn-sm">Leia mais</button>
+                </div>
+
+                <div class="marcador"> <!-- caso a div não tenha nenhuma classe especificada ela
+                                            ocupará o espaço de 12 grids em todos os tamanhos de tela (default) -->
+                    <h2>Rodapé</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <button class="btn btn-outline-dark btn-sm">Leia mais</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
